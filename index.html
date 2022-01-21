@@ -29,8 +29,8 @@
       <div id="menu-bar" class="fas fa-hamburger"></div>
 
       <nav class="navbar">
-        <ul>
-          <li><a href="#home" class="active">home</a></li>
+        <ul class="list">
+          <li><a href="#home">home</a></li>
           <li><a href="#about">about</a></li>
           <li><a href="#menu">menu</a></li>
           <li><a href="#gallery">gallery</a></li>
@@ -40,7 +40,8 @@
     </header>
 
     <section class="home" id="home">
-      <div class="content">
+
+      <div class="content" data-aos='fade-right'>
         <h3>We believe good food offer great smile</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt, commodi excepturi
@@ -50,14 +51,14 @@
         <a href="#"><button class="btn">get started</button></a>
       </div>
 
-      <div class="image">
+      <div class="image" data-aos='fade-up'>
         <img src="images/home-img.png" alt="" />
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="image"></div>
-      <div class="content">
+    <section class="about" id="about" >
+      <div class="image" data-aos='fade-right'></div>
+      <div class="content" data-aos='fade-left'>
         <h3>a word about us</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus tempore veniam
@@ -74,15 +75,15 @@
 
     <section class="menu" id="menu">
       <h1 class="heading">our delicious <span>menu</span></h1>
-      <ul class="list">
+      <ul class="list" data-aos='fade-down'>
         <li class="btn" data-src="images/menu1.jpg">breakfast</li>
         <li class="btn active" data-src="images/menu2.jpg">lunch</li>
         <li class="btn" data-src="images/menu3.jpg">dinner</li>
         <li class="btn" data-src="images/menu4.jpg">dessert</li>
       </ul>
 
-      <div class="row">
-        <div class="image">
+      <div class="row" data-aos='fade-right'>
+        <div class="image" data-aos='fade-left'>
           <img src="images/menu2.jpg" id="menu-img" alt="" />
         </div>
 
@@ -115,7 +116,7 @@
     <section class="popular" id="popular">
       <h1 class="heading">most <span>popular</span> dishes</h1>
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos='fade-right'>
           <img src="images/product-1.jpg" alt="" />
           <h3>delicious food</h3>
           <div class="stars">
@@ -129,7 +130,7 @@
           <a href="#"><button class="btn">add to cart</button></a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos='fade-left'>
           <img src="images/product-2.jpg" alt="" />
           <h3>delicious food</h3>
           <div class="stars">
@@ -143,7 +144,7 @@
           <a href="#"><button class="btn">add to cart</button></a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos='fade-right'>
           <img src="images/product-3.jpg" alt="" />
           <h3>delicious food</h3>
           <div class="stars">
@@ -157,7 +158,7 @@
           <a href="#"><button class="btn">add to cart</button></a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos='fade-left'>
           <img src="images/product-4.jpg" alt="" />
           <h3>delicious food</h3>
           <div class="stars">
@@ -176,28 +177,28 @@
     <section class="gallery" id="gallery">
       <h1 class="heading">our food <span>gallery</span></h1>
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos='fade-up'>
           <img src="images/img1.jpg" alt="" />
           <h3>delicious food</h3>
         </div>
-        <div class="box">
+        <div class="box" data-aos='fade-up'>
           <img src="images/img2.jpg" alt="" />
           <h3>delicious food</h3>
         </div>
-        <div class="box">
+        <div class="box" data-aos='fade-up'>
           <img src="images/img3.jpg" alt="" />
           <h3>delicious food</h3>
         </div>
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos='fade-up'>
           <img src="images/img4.jpg" alt="" />
           <h3>delicious food</h3>
         </div>
-        <div class="box">
+        <div class="box" data-aos='fade-up'>
           <img src="images/img5.jpg" alt="" />
           <h3>delicious food</h3>
         </div>
-        <div class="box">
+        <div class="box"data-aos='fade-up'>
           <img src="images/img6.jpg" alt="" />
           <h3>delicious food</h3>
         </div>
@@ -207,16 +208,15 @@
     <section class="order" id="order">
         <h1 class="heading">make an <span>order</span></h1>
         <div class="row">
-            <form action="">
+            <form action="" data-aos='fade-right'>
                 <input type="text" placeholder="your name" class='box' />
                 <input type="email" placeholder="your email" class='box' />
                 <input type="password" placeholder="your password" class='box' />
                 <input type="number" placeholder="your number" class='box' />
                 <textarea name="" id="" cols="30" rows="10" class='box address' placeholder="your address"></textarea>
                 <input type="submit" value="order now" class="btn">
-
             </form>
-            <div class="image">
+            <div class="image" data-aos='fade-left'>
                 <img src="images/form-img.jpg" alt="">
             </div>
         </div>
@@ -258,5 +258,12 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
+ 
+    <script>
+        AOS.init({
+            delay: 400, 
+            duration: 1000,
+        });
+    </script>
+</body>
 </html>

@@ -1,12 +1,14 @@
 const menuBar = document.querySelector('#menu-bar');
 const navbar = document.querySelector('.navbar');
+const navbarLink = document.querySelectorAll('.navbar ul li a');
+const sections = document.querySelectorAll('section');
 
 menuBar.addEventListener('click', function () {
   this.classList.toggle('fa-times');
   navbar.classList.toggle('nav-toggle');
 });
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll load', function () {
   menuBar.classList.remove('fa-times');
   navbar.classList.remove('nav-toggle');
 });
